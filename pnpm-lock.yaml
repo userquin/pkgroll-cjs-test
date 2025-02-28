@@ -15,8 +15,8 @@ importers:
         specifier: ^22.13.5
         version: 22.13.5
       pkgroll:
-        specifier: ^2.11.2
-        version: 2.11.2(typescript@5.8.2)
+        specifier: file:pkgroll-0.0.0-semantic-release.tgz
+        version: file:pkgroll-0.0.0-semantic-release.tgz(typescript@5.8.2)
       typescript:
         specifier: ^5.7.3
         version: 5.8.2
@@ -609,8 +609,9 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  pkgroll@2.11.2:
-    resolution: {integrity: sha512-AnmLpYTRsOuYl3tATsx9EHaBFN5siNu9ufdu0REz8oKDiILMsWrfvis3DxZh+ATw7z7lbc+hx7pE63pkI3k4Rg==}
+  pkgroll@file:pkgroll-0.0.0-semantic-release.tgz:
+    resolution: {integrity: sha512-/wwEBgiGT8tVUMz0cZMgK3YNTcUunUCyNhdXez2z8ozbtn+0o6XWhPuIut705Z9PN8gLFCVBz62DDGdywNAZrg==, tarball: file:pkgroll-0.0.0-semantic-release.tgz}
+    version: 0.0.0-semantic-release
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -1191,7 +1192,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pkgroll@2.11.2(typescript@5.8.2):
+  pkgroll@file:pkgroll-0.0.0-semantic-release.tgz(typescript@5.8.2):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.34.8)
       '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.8)
